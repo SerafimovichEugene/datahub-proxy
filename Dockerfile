@@ -2,7 +2,6 @@ FROM nginx:stable
 
 COPY nginx.conf /etc/nginx/
 COPY mime.types /etc/nginx/
-# COPY public /data/www/
 
 # support running as arbitrary user which belogs to the root group
 RUN chmod g+rwx /var/cache/nginx /var/run /var/log/nginx
